@@ -944,6 +944,7 @@ require('lazy').setup({
   require 'custom.plugins.Persistence',
   require 'custom.plugins.bufferline',
   require 'custom.plugins.indent_blankline',
+  require 'custom.plugins.ufo',
   -- require 'custom.plugins.php',
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
@@ -973,6 +974,7 @@ require('lazy').setup({
 })
 
 require 'custom.plugins.catppuccin'
+require 'custom.plugins.ufo_config'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 -- Set timeout length for mapped sequences (like 'jk')
@@ -980,7 +982,6 @@ vim.o.timeout = true
 vim.o.timeoutlen = 300
 
 vim.opt.termguicolors = true
-require('bufferline').setup {}
 
 -- Use 'jk' to escape from Insert, Visual, and Command modes
 vim.keymap.set('i', 'jk', '<Esc>', { noremap = true, silent = true })
